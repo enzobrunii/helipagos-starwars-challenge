@@ -1,5 +1,5 @@
-export default function Planets() {
-  return (
-    <h1>Planets</h1>
-  );
+import EntityListPage from '../components/EntityListPage'
+
+export default function PlanetsPage() {
+  return <EntityListPage title="Star Wars Planets" category="planets" />
 }

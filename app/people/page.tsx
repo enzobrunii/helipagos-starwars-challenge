@@ -1,5 +1,5 @@
-export default function People() {
-  return (
-    <h1>People</h1>
-  );
+import EntityListPage from '../components/EntityListPage'
+
+export default function PeoplePage() {
+  return <EntityListPage title="Star Wars People" category="people" />
 }

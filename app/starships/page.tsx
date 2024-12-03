@@ -1,5 +1,5 @@
-export default function Starships() {
-  return (
-    <h1>Starships</h1>
-  );
+import EntityListPage from '../components/EntityListPage'
+
+export default function StarshipsPage() {
+  return <EntityListPage title="Star Wars Starships" category="starships" />
 }
