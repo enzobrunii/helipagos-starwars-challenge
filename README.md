@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Star Wars 8-bit Explorer
 
-## Getting Started
+## 🌌 Introducción
 
-First, run the development server:
+**Star Wars 8-bit Explorer** es una aplicación web moderna que permite explorar el universo de **Star Wars** con un diseño visual inspirado en gráficos retro de 8 bits. Creada con tecnologías de vanguardia como **React**, **Next.js**, y la **API de Star Wars (SWAPI)**, ofrece a los fans una experiencia interactiva y nostálgica.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Características Principales
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🌠 **Exploración detallada** de personajes, planetas y naves espaciales del universo de Star Wars.
+- 🎨 **Diseño retro** con gráficos y animaciones en estilo 8 bits.
+- 🔍 **Búsqueda avanzada** con soporte para paginación infinita.
+- 💫 **Efectos visuales y animaciones** para una experiencia inmersiva.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Inicio Rápido
 
-To learn more about Next.js, take a look at the following resources:
+Sigue estos pasos para configurar y ejecutar el proyecto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clona el repositorio**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Instala las dependencias**:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Inicia el servidor de desarrollo**:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Abre la aplicación en tu navegador: [http://localhost:3000](http://localhost:3000).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📜 Scripts Disponibles
+
+Estos comandos están disponibles para gestionar el proyecto:
+
+- `npm run dev`: Inicia el servidor en modo desarrollo.
+- `npm run build`: Genera los archivos de la aplicación para producción.
+- `npm start`: Inicia la aplicación en modo producción.
+- `npm run lint`: Analiza el código para mantener estándares de calidad.
+- `npm test`: Ejecuta las pruebas unitarias.
+- `npm run cypress:open`: Abre Cypress para pruebas end-to-end (E2E).
+
+---
+
+## 📚 Documentación Adicional
+
+Consulta la documentación detallada en los siguientes enlaces:
+
+- [📂 Arquitectura del Proyecto](ARCHITECTURE.md)
+- [⚙️ Componentes Principales](COMPONENTS.md)
+- [🔗 Rutas de API (Backend for Frontend)](API_ROUTES.md)
+- [✅ Estrategia de Pruebas](TESTING.md)
+- [🚀 Últimos Cambios](CHANGELOG.md)
+
+---
+
+## 🛠️ Tecnologías Principales
+
+Este proyecto utiliza las siguientes tecnologías:
+
+- [Next.js 14](https://nextjs.org/) - Framework de React para aplicaciones web modernas.
+- [React 18](https://reactjs.org/) - Biblioteca para construir interfaces de usuario.
+- [Tailwind CSS](https://tailwindcss.com/) - Framework de CSS para estilos rápidos y eficientes.
+- [Jest](https://jestjs.io/) y [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Herramientas para pruebas unitarias.
+- [Cypress](https://www.cypress.io/) - Framework para pruebas E2E.
+
