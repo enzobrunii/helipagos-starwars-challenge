@@ -52,3 +52,25 @@ Todas las modificaciones importantes del proyecto serán documentadas en este ar
 - Implementación de scroll infinito en el componente `List`.
 
 ---
+
+## [v1.0.0] - 2024-12-04
+
+## Fase 3: Authentication and Optimization
+
+#### Feature: Authentication (branch: `feature/auth`)
+    - Implement `useHelipagosAuth` hook
+    - Create `LoginForm` component
+    - Integrate authentication with API requests
+
+#### Feature: Unit Testing (branch: `feature/unit-tests`)
+    - Write tests for components
+    - Write tests for hooks and utilities
+
+
+#### Feature: E2E Testing (branch: `feature/e2e-tests`)
+    - Set up Cypress
+    - Write E2E tests for critical paths
+
+#### Feature: Documentation (branch: `feature/documentation`)
+    - Update README.md
+    - Create ARCHITECTURE.md, COMPONENTS.md, API_ROUTES.md, TESTING.md
