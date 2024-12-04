@@ -32,4 +32,80 @@ body {
       2px -2px 0 #000,
       -2px 2px 0 #000;
   }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes fall {
+    from { transform: translateY(-100vh); }
+    to { transform: translateY(100vh); }
+  }
+
+  @keyframes fly {
+    from { transform: translate(-100%, -100%); }
+    to { transform: translate(100%, 100%); }
+  }
+
+  .star {
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .spaceship {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .star-wars-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 40vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #feda4a;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+
+  .crawl {
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+  }
+
+  .crawl > .title {
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  .crawl > .title h1 {
+    margin: 0 0 2vw;
+    text-transform: uppercase;
+  }
+
+  @keyframes crawl {
+    0% {
+      top: 100vh;
+      transform: rotateX(20deg) translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
 }

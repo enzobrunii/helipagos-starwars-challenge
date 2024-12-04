@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Press_Start_2P } from 'next/font/google';
-import './globals.css';
+import AnimatedBackground from './components/AnimatedBackground';
+import { HelipagosAuthProvider } from './context/HelipagosAuthContext';
+import './globals.css'
 
 const pressStart2P = Press_Start_2P({ subsets: ['latin'], weight: '400' });
 
@@ -17,8 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${pressStart2P.className} bg-black text-white`}>
-        {children}
+        <HelipagosAuthProvider>
+          <AnimatedBackground />
+          <div className="relative z-10">
+            {children}
+          </div>
+        </HelipagosAuthProvider>
       </body>
     </html>
-  );
+  )
 }
+
