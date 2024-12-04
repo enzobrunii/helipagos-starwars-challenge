@@ -5,14 +5,14 @@ import { usePathname } from 'next/navigation'
 import { useHelipagosAuth } from '../hooks/useHelipagosAuth'
 
 export default function Navigation() {
-  const pathname = usePathname()
+  const pathname = usePathname() || ''
   const { isAuthenticated, logout } = useHelipagosAuth()
 
   const isActive = (path: string) => {
     if (path === '/') {
       return pathname === path
     }
-    return pathname.startsWith(path)
+    return pathname?.startsWith(path)
   }
 
   return (
