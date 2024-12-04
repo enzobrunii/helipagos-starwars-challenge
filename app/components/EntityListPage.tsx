@@ -19,7 +19,7 @@ interface EntityListPageProps {
 }
 
 const EntityListPage: React.FC<EntityListPageProps> = ({ title, category }) => {
-  const { data: entities, loading, error, search } = useSwapi<Entity>(`/${category}`);
+  const { data: entities, loading, error, search, loadMore, hasMore } = useSwapi<Entity>(`/${category}`);
 
   const handleSearch = (query: string) => {
     search(query);
@@ -42,6 +42,8 @@ const EntityListPage: React.FC<EntityListPageProps> = ({ title, category }) => {
           <List 
             items={entities} 
             category={category} 
+            onLoadMore={loadMore}
+            hasMore={hasMore}
           />
         )}
       </div>
