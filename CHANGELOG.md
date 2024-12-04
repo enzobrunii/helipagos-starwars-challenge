@@ -33,3 +33,22 @@ Todas las modificaciones importantes del proyecto serán documentadas en este ar
 - Creación de páginas de detalle para personas, planetas y naves estelares.
 
 ---
+
+## [v0.2.0] - 2024-12-03
+
+### Fase 2: Enhanced Features and UI
+
+#### Feature: Animated Background (branch: `feature/animated-background`)
+- Implementación del componente `AnimatedBackground`.
+
+#### Feature: Star Wars Intro (branch: `feature/star-wars-intro`)
+- Implementación del componente `StarWarsIntro`.
+
+#### Feature: Search Functionality (branch: `feature/search`)
+- Implementación del componente `SearchBar`.
+- Integración de la funcionalidad de búsqueda en vistas de listas.
+
+#### Feature: Infinite Scrolling (branch: `feature/infinite-scroll`)
+- Implementación de scroll infinito en el componente `List`.
+
+---
