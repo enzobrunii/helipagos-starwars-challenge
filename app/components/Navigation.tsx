@@ -2,9 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useHelipagosAuth } from '../hooks/useHelipagosAuth'
 
 export default function Navigation() {
   const pathname = usePathname()
+  const { isAuthenticated, logout } = useHelipagosAuth()
 
   const isActive = (path: string) => {
     if (path === '/') {
@@ -41,6 +43,23 @@ export default function Navigation() {
             >
               Starships
             </Link>
+          </li>
+          <li>
+            {isAuthenticated ? (
+              <button 
+                onClick={logout}
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 pixel-borders"
+              >
+                Logout
+              </button>
+            ) : (
+              <Link 
+                href="/login"
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 pixel-borders"
+              >
+                Login
+              </Link>
+            )}
           </li>
         </ul>
       </div>

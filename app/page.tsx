@@ -4,8 +4,10 @@ import { useState } from 'react'
 import Logo from './components/Logo'
 import Link from 'next/link'
 import StarWarsIntro from './components/StarWarsIntro'
+import { useAuth } from './context/HelipagosAuthContext'
 
 export default function Home() {
+  const { isAuthenticated } = useAuth()
   const [selectedOption, setSelectedOption] = useState(0)
   const [showIntro, setShowIntro] = useState(true)
 
@@ -13,6 +15,7 @@ export default function Home() {
     { label: 'Explore People', href: '/people' },
     { label: 'Explore Planets', href: '/planets' },
     { label: 'Explore Starships', href: '/starships' },
+    { label: isAuthenticated ? 'Logout' : 'Login', href: '/login' },
   ]
 
   return (
@@ -25,6 +28,9 @@ export default function Home() {
             <Logo />
             <div className="mt-8 w-full max-w-md">
               <div className="pixel-borders p-4 bg-black bg-opacity-80">
+                {!isAuthenticated && (
+                  <p className="text-yellow-400 pixel-text mb-4 text-center">Hello, Jedi Padawan! Ready to explore the galaxy?</p>
+                )}
                 <ul className="space-y-4">
                   {menuOptions.map((option, index) => (
                     <li key={option.label}>
@@ -49,3 +55,4 @@ export default function Home() {
     </div>
   )
 }
+
