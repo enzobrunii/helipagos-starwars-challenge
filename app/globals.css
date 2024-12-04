@@ -10,17 +10,26 @@
   --primary-yellow: 255, 232, 31;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   font-family: 'Press Start 2P', cursive;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .pixel-borders {
+    box-shadow: 
+      0 -4px 0 4px rgba(var(--primary-yellow), 0.5),
+      0 4px 0 4px rgba(var(--primary-yellow), 0.5),
+      -4px 0 0 4px rgba(var(--primary-yellow), 0.5),
+      4px 0 0 4px rgba(var(--primary-yellow), 0.5);
+  }
+
+  .pixel-text {
+    text-shadow: 
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000;
   }
 }
