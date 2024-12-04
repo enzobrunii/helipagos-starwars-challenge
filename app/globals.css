@@ -32,4 +32,31 @@ body {
       2px -2px 0 #000,
       -2px 2px 0 #000;
   }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes fall {
+    from { transform: translateY(-100vh); }
+    to { transform: translateY(100vh); }
+  }
+
+  @keyframes fly {
+    from { transform: translate(-100%, -100%); }
+    to { transform: translate(100%, 100%); }
+  }
+
+  .star {
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .spaceship {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
 }
